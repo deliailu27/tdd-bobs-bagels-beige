@@ -26,13 +26,13 @@ Total                 £${Number(this.total.toFixed(2))}
             receiptLine += Bagel.getTypeOfBagel(key)
             ? Bagel.getTypeOfBagel(key)
             : 'Coffee'
-            for (let i = 0;i<19;i++){
+            for (let i = 0; i< 19; i++){
                 if (receiptLine.length < 19){
                     receiptLine += " "
                 }
             }
             receiptLine += this.purchases[`${key}`]
-            for (let i=0;i<4;i++){
+            for (let i = 0; i < 4; i++){
                 if (receiptLine.length < 23){
                     receiptLine += " "
                 }

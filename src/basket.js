@@ -19,8 +19,17 @@ class Basket {
             }
         }
         return this.contents
-
     }
+
+    checkID(id) {
+        for (let i = 0; i < this.contents[i]; i++) {
+            if (this.contents[i].id === id) {
+
+                return 'ID exists already'
+            }
+        } return "ID doesnt exist"
+    }
+
     removeBagel(id) {
         for (let i = 0; i < this.contents.length; i++) {
             if (this.contents[i].id === id) {
