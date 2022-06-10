@@ -29,6 +29,15 @@ describe('Basket', () => {
 
     expect(result).toEqual(expected)
   })
+  // Added negative check
+  it('add a negitive item', () => {
+    basket.addBagel('BGLO')
+    const expected = [new Bagel('BGLO', 1)]
+
+    const result = basket.addBagel('BGLO', -1)
+
+    expect(result).toEqual(expected)
+  })
 
   it('remove item from basket', () => {
     const expected = []
